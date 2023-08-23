@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
+<!--- need to fix research, fix buildable research as well.-->
+
+
 <Defs>
-	<Vehicles.VehicleBuildDef ParentName = "M_BaseVehiclePawn">
+	<Vehicles.VehicleBuildDef ParentName = "BaseVehiclePawn">
 	<defName>mechnarr_pawn</defName>
 		<thingClass>Vehicles.VehiclePawn</thingClass>
 		<label>MechN.A.R.R</label>
@@ -11,7 +14,7 @@
 		<graphicData>
 			<texPath>vehicles/mechnarr/mechnarr</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
-			<drawSize>(1.3,1.3)</drawSize>
+			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		
 		
@@ -21,7 +24,12 @@
 			<Mass>1200</Mass>
 			<RepairRate>1</RepairRate>
 			<BodyIntegrity>1</BodyIntegrity>
+		
+			
+			
 		</vehicleStats>
+		
+		
 		<statBases>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<ComfyTemperatureMax>37</ComfyTemperatureMax> 
@@ -34,22 +42,22 @@
 		</statBases>
 		<buildDef>mechnarr_blueprint</buildDef>
 		
-		
-		<fillPercent>.8</fillPercent>
-
-		<size>(1.3,1.3)</size>
-		<vehicleCategory>Combat</vehicleCategory>
-		<techLevel>Industrial</techLevel>
-		<vehicleType>Land</vehicleType>
-		<vehicleMovementPermissions>DriverNeeded</vehicleMovementPermissions>
-		
-		
+	<properties>
 		<vehicleJobLimitations>
 			<li>
 				<defName>RepairVehicle</defName>
 				<maxWorkers>3</maxWorkers>
 			</li>
 		</vehicleJobLimitations>
+	<vehicleCategory>Combat</vehicleCategory>   <!--might need to move, search more for where to go to get rid of errors -->
+			<techLevel>Industrial</techLevel>
+			<vehicleType>Land</vehicleType>
+			<vehicleMovementPermissions>DriverNeeded</vehicleMovementPermissions>
+	</properties>
+		<fillPercent>.8</fillPercent>
+
+		<size>(1.3,1.3)</size>
+		
 		
 		
 		

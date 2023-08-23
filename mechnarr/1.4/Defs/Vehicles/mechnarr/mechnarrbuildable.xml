@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<Vehicles.VehicleBuildDef ParentName="M_VehicleBaseBuildable">
-	<defName>mechnarr_blueprint</defName>
-	<label>MechN.A.R.R Blueprint</label>
-	<description> A MechN.A.R.R suit frame under construction</description>
-	<designationCategory>Vehicles</designationCategory>
-	<researchPrerequisites>
-			<li></li>
-	</researchPrerequisites>
-	<selectable>true</selectable>
-	<altitudeLayer>Building</altitudeLayer>
-	<graphicData>
+<Defs>
+	<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+		<defName>mechnarr_blueprint</defName>
+		<label>MechN.A.R.R Blueprint</label>
+		<description> A MechN.A.R.R suit frame under construction</description>
+		<designationCategory>Vehicles</designationCategory>
+		<researchPrerequisites>
+        <li>MicroelectronicsBasics</li>
+        <!-- Add more <li> entries for additional required research projects -->
+		</researchPrerequisites>
+		<altitudeLayer>Building</altitudeLayer>
+		<graphicData>
 			<texPath>building/mechnarr/buildingblueprint</texPath>
 			<!--  need to add temp textures, names follow "temp_east" and "temp_north" schema, of that end name being the one used to find all-->
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -37,8 +38,11 @@
 	<useHitPoints>true</useHitPoints>
 	<thingToSpawn>mechnarr_pawn</thingToSpawn>
 	<costList>
-			<Steel>550</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
-		</costList>
+        <li>
+            <thingDef>Steel</thingDef> <!-- Required resource -->
+            <count>100</count> <!-- Required quantity -->
+        </li>
 
-</Vehicles.VehicleBuildDef>
+	</Vehicles.VehicleBuildDef>
+
+</Defs>
