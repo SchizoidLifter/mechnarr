@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--- need to fix research, fix buildable research as well.-->
+
+
+<Defs>
+	<Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+		<defName>mechnarr_pawn</defName>
+		<label>MechN.A.R.R</label>
+		<description>A Mechanical Near Area Rapid Response suit. Built to quickly engage enemies with twin arm-mounted machine guns before rapidly returning to base for refueling. The design is suseptible to damage due to the light plating, exposed chasis and exposed pulley system used for arm movement, along with its generally small height of ~8.5 feet. Fuel is used quickly as the system utilizes angled twin leg rockets and durable wheels to reach high speeds, meaning usage outside of the local area is not advised (until I find a way to allow it to be brought via vehicle)</description>
+		
+		<nameable>true</nameable>
+		
+		<graphicData>
+			<texPath>vehicles/mechnarr/mechnarr</texPath>
+			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		<!--	<shaderType>CutoutComplexPattern</shaderType>  -->
+		</graphicData>
+		
+		<vehicleCategory>Combat</vehicleCategory>
+		<techLevel>Industrial</techLevel>
+		<vehicleType>Land</vehicleType>
+		
+		<vehicleStats>
+			<MoveSpeed>12</MoveSpeed>
+			<CargoCapacity>100</CargoCapacity>
+			<Mass>1200</Mass>
+			<RepairRate>1.5</RepairRate>
+			
+		</vehicleStats>
+		
+		<race>
+			<baseBodySize>1</baseBodySize>
+		</race>
+		
+		<statBases>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+			<ComfyTemperatureMax>37</ComfyTemperatureMax> 
+			<!-- I think it uses C instead of F  -->
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.28</ArmorRating_Sharp>
+			<ArmorRating_Heat>1.0</ArmorRating_Heat>
+			<Flammability>0</Flammability>
+			<MarketValue>8000</MarketValue>
+		</statBases>
+		
+	<buildDef>mechnarr_blueprint</buildDef>
+		
+	<properties>
+		<vehicleJobLimitations>
+			<li>
+				<defName>RepairVehicle</defName>
+				<maxWorkers>3</maxWorkers>
+			</li>
+		</vehicleJobLimitations>
+		
+			<vehicleType>Land</vehicleType>
+			<vehicleMovementPermissions>DriverNeeded</vehicleMovementPermissions>
+			
+	</properties>
+		<fillPercent>.8</fillPercent>
+
+		<size>(2,2)</size>
+		
+		
+	</Vehicles.VehicleDef>
+
+
+
+</Defs>
