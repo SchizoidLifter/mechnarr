@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-	<Vehicles.VehicleBuildDef ParentName = "BaseVehiclePawn">
+	<Vehicles.VehicleBuildDef ParentName = "M_BaseVehiclePawn">
 	<defName>mechnarr_pawn</defName>
 		<thingClass>Vehicles.VehiclePawn</thingClass>
 		<label>MechN.A.R.R</label>
@@ -18,6 +18,9 @@
 		<vehicleStats>
 			<MoveSpeed>12</MoveSpeed>
 			<CargoCapacity>100</CargoCapacity>
+			<Mass>1200</Mass>
+			<RepairRate>1</RepairRate>
+			<BodyIntegrity>1</BodyIntegrity>
 		</vehicleStats>
 		<statBases>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
@@ -26,6 +29,8 @@
 			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.28</ArmorRating_Sharp>
 			<ArmorRating_Heat>1.0</ArmorRating_Heat>
+			<Flammability>0</Flammability>
+			<MarketValue>3000</MarketValue>
 		</statBases>
 		<buildDef>mechnarr_blueprint</buildDef>
 		
@@ -37,7 +42,6 @@
 		<techLevel>Industrial</techLevel>
 		<vehicleType>Land</vehicleType>
 		<vehicleMovementPermissions>DriverNeeded</vehicleMovementPermissions>
-		<vehicleType>Land</vehicleType>
 		
 		
 		<vehicleJobLimitations>
