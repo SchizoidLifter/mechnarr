@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-	<Vehicles.VehicleBuildDef Name="MechNARR" ParentName = "BaseVehiclePawn">
+	<Vehicles.VehicleBuildDef ParentName = "BaseVehiclePawn">
 	<defName>mechnarr_pawn</defName>
 		<thingClass>Vehicles.VehiclePawn</thingClass>
 		<label>MechN.A.R.R</label>
