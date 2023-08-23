@@ -4,7 +4,9 @@
     <author>ELE</author>
     <packageId>ELE.MechNARR</packageId>
     <description>MechN.A.R.R : Mech(anical) Near Area Rapid Response </description>
-    <supportedVersions>1.4</supportedVersions>
+    <supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
     <!-- Other metadata fields -->
 	<modDependencies>
   <li>
