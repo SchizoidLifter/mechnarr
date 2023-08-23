@@ -6,7 +6,7 @@
 		<label>MechN.A.R.R Blueprint</label>
 		<description> A MechN.A.R.R suit frame under construction</description>
 		<researchPrerequisites>
-        <li>MicroelectronicsBasics</li>
+        <li>Microelectronics</li>
         <!-- Add more <li> entries for additional required research projects -->
 		</researchPrerequisites>
 		<altitudeLayer>Building</altitudeLayer>
@@ -22,25 +22,20 @@
 			<WorkToBuild>1500</WorkToBuild>
 			<Flammability>0.05</Flammability>
 	</statBases>
-	<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+	
 	<size>(2,1)</size>
+	
 	<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-	<constructEffect>ConstructMetal</constructEffect>
 	<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
 	<passability>Impassible</passability>
-	<fillPercent>1</fillPercent>
-	<neverMultiSelect>true</neverMultiSelect>
-	<clearBuildingArea>true</clearBuildingArea>
-	<category>Building</category>
 	<rotatable>false</rotatable>
 	<blockWind>true</blockWind>
 	<useHitPoints>true</useHitPoints>
 	<thingToSpawn>mechnarr_pawn</thingToSpawn>
 	<costList>
-        <li>
-            <thingDef>Steel</thingDef> <!-- Required resource -->
-            <count>100</count> <!-- Required quantity -->
-        </li>
+		<ComponentIndustrial>30</ComponentIndustrial>
+		<Steel>800</Steel>
+	</costList>
 
 	</Vehicles.VehicleBuildDef>
 

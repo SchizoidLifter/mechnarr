@@ -5,7 +5,7 @@
 
 <Defs>
 	<Vehicles.VehicleBuildDef ParentName="BaseVehiclePawn">
-	<defName>mechnarr_pawn</defName>
+		<defName>mechnarr_pawn</defName>
 		<thingClass>Vehicles.VehiclePawn</thingClass>
 		<label>MechN.A.R.R</label>
 		<description>A Mechanical Near Area Rapid Response suit. Built to quickly engage enemies with twin arm-mounted machine guns before rapidly returning to base for refueling. The design is suseptible to damage due to the light plating, exposed chasis and exposed pulley system used for arm movement, along with its generally small height of ~8.5 feet. Fuel is used quickly as the system utilizes angled twin leg rockets and durable wheels to reach high speeds, meaning usage outside of the local area is not advised (until I find a way to allow it to be brought via vehicle).
@@ -22,11 +22,6 @@
 			<MoveSpeed>12</MoveSpeed>
 			<CargoCapacity>100</CargoCapacity>
 			<Mass>1200</Mass>
-			<RepairRate>1</RepairRate>
-			<BodyIntegrity>1</BodyIntegrity>
-		
-			
-			
 		</vehicleStats>
 		
 		
@@ -40,7 +35,8 @@
 			<Flammability>0</Flammability>
 			<MarketValue>3000</MarketValue>
 		</statBases>
-		<buildDef>mechnarr_blueprint</buildDef>
+		
+	<buildDef>mechnarr_blueprint</buildDef>
 		
 	<properties>
 		<vehicleJobLimitations>
@@ -49,16 +45,13 @@
 				<maxWorkers>3</maxWorkers>
 			</li>
 		</vehicleJobLimitations>
-	<vehicleCategory>Combat</vehicleCategory>   <!--might need to move, search more for where to go to get rid of errors -->
-			<techLevel>Industrial</techLevel>
+		
 			<vehicleType>Land</vehicleType>
 			<vehicleMovementPermissions>DriverNeeded</vehicleMovementPermissions>
 	</properties>
 		<fillPercent>.8</fillPercent>
 
-		<size>(1.3,1.3)</size>
-		
-		
+		<size>(2,2)</size>
 		
 		
 	</Vehicles.VehicleBuildDef>
