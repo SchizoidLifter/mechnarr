@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Vehicles.VehicleBuildDef Name="mechnarr" ParentName="VehicleBaseBuildable">
+	<defName>mechnarr_blueprint</defName>
+	<label>MechN.A.R.R Blueprint</label>
+	<description> A MechN.A.R.R suit frame under construction</description>
+	<graphicData>
+			<texPath>building/mechnarr/buildingblueprint</texPath>
+			<!--  need to add temp textures, names follow "temp_east" and "temp_north" schema, of that end name being the one used to find all-->
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+
+	<statBases>
+			<MaxHitPoints>1300</MaxHitPoints>
+			<WorkToBuild>1500</WorkToBuild>
+			<Flammability>0.05</Flammability>
+	</statBases>
+
+	<size>(2,1)</size>
+	<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	<fillPercent>1</fillPercent>
+	
+
+
+</Vehicles.VehicleBuildDef>
