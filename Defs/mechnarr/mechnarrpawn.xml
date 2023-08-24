@@ -21,7 +21,7 @@
 		<vehicleCategory>Combat</vehicleCategory>
 		<techLevel>Industrial</techLevel>
 		<vehicleType>Land</vehicleType>
-		
+		<vehicleMovementPermissions>DriverNeeded</vehicleMovementPermissions>
 		<vehicleStats>
 			<MoveSpeed>12</MoveSpeed>
 			<CargoCapacity>140</CargoCapacity>
@@ -55,8 +55,7 @@
 			</li>
 		</vehicleJobLimitations>
 		
-		<vehicleType>Land</vehicleType>
-		<vehicleMovementPermissions>DriverNeeded</vehicleMovementPermissions>
+		
 		<diagonalRotation>true</diagonalRotation>
 
 		<worldSpeedMultiplier>1</worldSpeedMultiplier>
@@ -114,7 +113,7 @@
 				<indicator>VF_Explosive</indicator>
 				<chance>1.0</chance>
 				<radius>2</radius>
-				<damageDef>Explosion</damageDef>
+				<damageDef>Bomb</damageDef>
 				</li>
 			</reactors>
 		<hitbox>

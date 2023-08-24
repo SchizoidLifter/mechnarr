@@ -10,8 +10,8 @@
 		<graphicData>
 			<texPath>building/mechnarr/buildingblueprint</texPath>
 			<!--  need to add temp textures, names follow "temp_east" and "temp_north" schema, of that end name being the one used to find all-->
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3,2)</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,5)</drawSize>
 		</graphicData>
 		<designationCategory>VVE_Vehicles</designationCategory>
 	<statBases>
@@ -36,7 +36,7 @@
 	<costList>
 		<ComponentIndustrial>30</ComponentIndustrial>
 		<Steel>500</Steel>
-		<Chemfuel>100</chemfuel>
+		<chemfuel>100</chemfuel>
 	</costList>
 
 	</Vehicles.VehicleBuildDef>
