@@ -35,7 +35,8 @@
 	<thingToSpawn>mechnarr_pawn</thingToSpawn>
 	<costList>
 		<ComponentIndustrial>30</ComponentIndustrial>
-		<Steel>800</Steel>
+		<Steel>500</Steel>
+		<Chemfuel>100</chemfuel>
 	</costList>
 
 	</Vehicles.VehicleBuildDef>
